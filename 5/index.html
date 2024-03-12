@@ -1,0 +1,55 @@
+<head>
+    <title>CSS Grid Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="grid">
+        <div class="grid-item grid-item1">
+        <a id="itext">Kiirschwasser </a>
+        </div>
+
+        <div class="grid-item grid-item2">
+            <div class="dropdown">
+			<button class="dropbtn" onclick="myFunction()">Offer</button>
+			 <div class="dropdown-content" id="myDropdown">
+				<a href="#">Sales</a>
+				<a href="#">For man</a>
+				<a href="#">For woman</a>
+				<a href="#">For children</a>
+				<a href="#">Winter Collection</a>
+			</div>
+		    </div>
+        </div>
+
+        <div class="grid-item grid-item3"><p>Item 
+        </p></div>
+        <div class="grid-item grid-item4"><p>Item 4
+            Item 4
+            Item 4Item 4Item 4
+            Item 4
+            Item 4Item 4Item 4
+
+
+
+        </p></div>
+        <div class="grid-item grid-item5">Footer</div>
+
+    </div>
+
+    <script type="text/javascript">
+        /* При нажатии на кнопку происходит изменение CSS-свойств выпадающего меню*/
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        // Скрытие меню при нажатии клавишей мыши не в области меню
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+        </script>
+</body>

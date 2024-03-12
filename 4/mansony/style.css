@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+.grid {
+	display: grid;
+	height:100vh;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-rows: repeat(4,  1fr);
+    grid-gap: 5px;
+	grid-auto-flow:row dense; /*dense - заполнитель свободного пространства*/
+}
+.grid-item{
+	background-color: aquamarine;
+}
+.grid-item:nth-of-type(2),
+.grid-item:nth-of-type(3){ /*сделаем 2 и 3 элемент делаем в два раза больше*/
+ grid-column: span 2;
+}

@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .A { grid-area: f; }
+  .B { grid-area: i; }
+  .C { grid-area: b; }
+  .D { grid-area: o; }
+  .E { grid-area: n; }
+
+  .container {
+    display: grid;
+    grid-template: "f f f f i i i i i"
+                   "f f f f o o o o b"
+				   "f f f f o o o o b"
+                   "f f f f n n n n b"
+				   "f f f f n n n n b";
+}
+    /* Добавляем оформление grid-контейнеру: */
+.container {
+    border: 2px solid rgb(80, 145, 27); /* Обводим зелёной линией */
+    border-radius: 5px; /* Скругляем углы на 5 пикселей */
+}
+
+/* Добавляем оформление элементам grid-контейнера: */
+.container * {
+    border: 1px dashed; /* Обводим чёрным пунктиром */
+    border-radius: 10px; /* Скругляем углы на 10 пикселей */
+    background-color: rgba(82, 29, 179, 0.5); /* Фон красим фиолетовым */
+    text-align: center; /* Контент размещаем в центре по горизонтали */
+}
+
+/*
+    Для разделения действий мы несколько раз объявили один и тот же элемент
+    .container. На самом деле все эти блоки — единое целое, и относятся к одному классу — container.
+*/

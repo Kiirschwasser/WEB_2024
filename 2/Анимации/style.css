@@ -1,0 +1,69 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap:50px;
+	padding:10px;
+	color: #f7f4dd;
+	background-color: #ffbb25;
+}
+.сontainer{
+	display: flex;
+	width: 50dvw;
+	height: 10dvh;
+	background-color: #090d15;
+	justify-content: center;
+	align-items: center;
+}
+.box {
+	position: center;
+	width: 15dvw;
+}
+p{
+	display:flex;
+	justify-content:center;
+}
+@keyframes ChangeBackground {
+	0% { background-color: red; }
+	25% { background-color: blue; }
+	50% { background-color: yellow; }
+	75% { background-color: green; }
+	100% { background-color: orange; }
+}
+#ChangeColor{
+	animation: ChangeBackground 5s infinite;
+}
+#ChangeColor:hover{
+	animation-play-state: paused;
+}
+
+@keyframes FeelLikeWheel {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+#Wheel{
+	animation: FeelLikeWheel 2s linear infinite;
+}
+#Wheel:hover {
+	animation-play-state: paused;
+}
+#leftRight{
+	position: relative;
+	animation: move 5s linear infinite;
+}
+@keyframes move {
+	0% { left: 0; }
+	25% { left: 25%; }
+	50% { left: 0; }
+	75% { left: -25%; }
+	100% { left: 0; }
+}
+#Bloating{
+	animation: inflate-deflate 3s ease-in-out infinite;
+}
+@keyframes inflate-deflate {
+	0%, 100% { transform: scale(1.25); }
+	50% { transform: scale(0.75); }
+}
