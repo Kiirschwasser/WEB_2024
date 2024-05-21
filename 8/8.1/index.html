@@ -1,0 +1,103 @@
+<head>
+    <title>Kiirschwasser's rating</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="grid-container">
+        <div class="grid-item grid-item1 title">Kiirschwasser</div>
+        <div class="grid-item grid-item2">
+            <div class="dropdown">
+			<button class="dropbtn" onclick="myFunction()">Musics</button>
+			 <div class="dropdown-content" id="myDropdown">
+				<a href="#">Posters</a>
+				<a href="#">Rating</a>
+			</div>
+
+
+            <button class="dropbtn" id="open-modal-btn">Films</button>
+
+            <button class="dropbtn">About us</button>
+		    </div>
+        </div>
+        <div class="modal" id="my-modal">
+            <div class="modal__box">
+                <button class="modal__close-btn" id="close-my-modal-btn">
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg width="20px" height="20px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 21.32L21 3.32001" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 3.32001L21 21.32" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <h2 class="Title_Album">Ведутся работы</h2>
+                <p>На той странтчке ведутся работы, вы ничего не найдете, надеюсь в следующий раз там что нибудь появится. А пока развлекайтесь текущей страничкой</p>
+            </div>
+        </div>
+        <div class="grid-item grid-item3">
+            <img class="album_cover" src="img/Foals - Everything not saved will be lost Part I.jpg">
+            <p class="Title_Album">Foals - Everything not saved will be lost Part I</p>
+            <p> Everything Not Saved Will Be Lost – Part 1 features album artwork from Ecuadorian artist Vicente Muñoz.
+                The image was created using infrared film, which captures infrared signal rather than visible light to contrast vegetation with the built environment.
+                This image is part of his ongoing series, Sublimis, which explores the inevitable struggle of man against nature in the urban environment.
+
+                The album's title is taken from the epigraph of the T. Michael Martin novel The End Games, which claims "Everything not saved will be lost" originated as a "Nintendo 'Quit Screen' message".
+                Although Martin in fact adapted the quote from the Nintendo Wii 'Quit Screen' message: "Anything not saved will be lost".
+                The quote has become a cultural meme, featured on the front page of Reddit many times over, serving as the name and inspiration for several international art exhibits, and shared countless times across all major social media platforms.</p>
+        </div> 
+
+        <div class="grid-item grid-item4">From this artist:
+            <div class="grid-item41">
+                <div class="image-wrapper">
+                    <img class="mini-album_cover" src="img/Foals - Everything not saved will be lost Part II.jpg">
+                    <p class="Title_Album">Everything not saved will be lost Part II</p>
+                </div>
+                <div class="image-wrapper">
+                    <img class="mini-album_cover" src="img/Foals - Holy Fire.jpg">
+                    <p class="Title_Album">Holy Fire</p>
+                </div>
+                <div class="image-wrapper">
+                    <img class="mini-album_cover" src="img/Foals - What Went Down.jpg">
+                    <p class="Title_Album">What Went Down</p>
+                </div>
+            </div>
+        </div>       
+        <div class="grid-item grid-item5">Critical reception
+            <div class="grid-item51">
+                <div class="publisher-rating">
+                    <div class="publisher">
+                        <span>Kiirschwasser:</span>
+                    </div>
+                    <div class="rating">
+                        <span class="rating-value">9.5</span>
+                    </div>
+                </div>
+                <div class="publisher-rating">
+                    <div class="publisher">
+                        <span>Pitchfork:</span>
+                    </div>
+                    <div class="rating">
+                        <span class="rating-value">6.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item grid-item6">Made by Kirill Zhavoronkov | 2024</div>
+    </div>
+    <script type="text/javascript">
+        /* При нажатии на кнопку происходит изменение CSS-свойств выпадающего меню*/
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        // Скрытие меню при нажатии клавишей мыши не в области меню
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+        </script>
+        <script src="script.js"></script>
+</body>
+

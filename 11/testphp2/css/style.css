@@ -1,0 +1,132 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: "Raleway",serif;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	z-index: 9998;
+	background: #eee;
+	padding: 20px 0;
+}
+.menu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+}
+
+.menu.show-menu {
+	position: absolute;
+	left: 0;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	background: #ccc;
+	padding: 5px 10px;
+	border-radius: 5px;
+	transition: all 0.5s ease;
+  }
+  
+.main-image {
+	position: relative;
+	text-align: center;
+}
+
+.main-image img {
+    max-width: 100%;
+    height: auto;
+}
+.menu-toggle {
+	display: none; /* Скрыть кнопку "Меню" по умолчанию */
+  }
+  
+  @media (max-width: 400px) {
+	.menu {
+	  display: none; /* Скрыть меню при ширине экрана менее 400px */
+	}
+  
+	.menu-toggle {
+	  display: block; /* Показать кнопку "Меню" при ширине экрана менее 400px */
+	  text-align: center;
+	  background: #ccc;
+	  padding: 5px 10px;
+	  border-radius: 5px;
+	  margin: 10px;
+	}
+  }
+.services {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 20px 0;
+}
+
+.service-card {	
+	position: relative;
+	margin: 10px;
+	max-width: 100%;
+}
+.desc{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 15px;
+	transition: all 0.3s ease-in-out;
+}
+.service-card img{
+	max-width: 100%;
+    height: auto;
+}
+.service-card:hover{cursor: pointer;}
+.service-card:hover .desc {
+	transform: translateY(-30%);
+	background-color: rgba(255, 255, 255, 1);
+	cursor: pointer;
+}
+
+.about-us {
+	position: relative;
+	width: 100%;
+	background-color: #ececec;
+	margin: 20px 0;
+}
+.about-us img{
+	width: 50%;
+}
+.desc_about{
+	max-width: 40%;
+	padding: 10px;
+	position: absolute;
+	top:30%;
+	background-color: #fff;
+	right: 20%;
+}
+@media (max-width: 1200px) {
+	.desc_about {
+	  position: static;
+	  max-width: 100%;
+	  margin-top: 10px; /* Расстояние между изображением и описанием */
+	}
+	.about-us img{
+		width: 100%;
+	}
+  }
+.footer {
+	text-align: center;
+	background: #898989;
+	padding: 20px 0;
+}
+@media (min-width: 321px) {	
+	.menu.show-menu {
+	display: none;}
+}
+@media (min-width: 768px) {
+	.rows {
+	  max-width: 70%;
+	  margin: 0 auto;
+	}
+  }
